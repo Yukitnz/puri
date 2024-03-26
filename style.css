@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #213D30; /* Dark green background color */
+    background-color: #f7f7f7;
     margin: 0;
     padding: 0;
 }
@@ -23,7 +23,6 @@ th, td {
     border: 1px solid #dddddd;
     padding: 10px;
     text-align: left;
-    background-color: #ffffff; /* White background color for table cells */
 }
 
 th {
@@ -33,7 +32,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
 }
 
 tr:nth-child(odd) {
@@ -50,8 +49,8 @@ tr:nth-child(odd) {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 100%;
-    margin-right: 10px;
+    width: 80%; /* Adjusted width for small screens */
+    margin-bottom: 10px; /* Added margin-bottom for better spacing */
 }
 
 .result-btn {
@@ -71,59 +70,16 @@ tr:nth-child(odd) {
 .sort-icon {
     margin-left: 5px;
 }
-/* Center the calculation container */
-.center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Set to full viewport height for vertical centering */
-    margin-bottom: 20px; /* Add space at the bottom */
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .search-container input[type=text] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
-
-.calculation-container {
-    text-align: center; /* Center align the contents within the container */
-}
-
-/* Style for select food */
-#foodSelect {
-    padding: 8px;
-    margin: 4px; /* Adjusted margin */
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Style for enter amount input */
-#amountInput {
-    padding: 8px;
-    margin: 4px; /* Adjusted margin */
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Style for calculate button */
-.calculate-btn {
-    padding: 10px 20px;
-    margin: 4px; /* Adjusted margin */
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    background-color: #53a3f8;
-    color: white;
-    cursor: pointer;
-}
-
-/* Style for calculation result */
-#calculationResult {
-    margin-top: 10px; /* Reduced margin top */
-    margin-bottom: 10px; /* Reduced margin bottom */
-    font-size: 18px;
-    background-color: #60bbe8; /* Light gray background color for the result */
-    padding: 20px; /* Padding added */
-    border-radius: 4px; /* Border radius added */
-}
-
-
-
-</style>
