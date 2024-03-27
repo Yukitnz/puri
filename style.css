@@ -18,8 +18,8 @@ body {
     background-color: #ffffff;
     border-radius: 10px; /* Increased border radius */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Enable horizontal scrolling */
 }
-
 /* Table styles */
 table {
     border-collapse: collapse;
