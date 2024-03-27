@@ -89,15 +89,17 @@ tr:nth-child(even) {
     text-align: center; /* Center align the contents within the container */
     margin: 20px auto; /* Center the calculation container horizontally */
 }
-
 /* Media queries for smaller screens */
 @media only screen and (max-width: 768px) {
     .container {
-        max-width: 95%; /* Adjusted max-width for smaller screens */
+        max-width: 90%; /* Adjusted max-width for smaller screens */
     }
     .search-container input[type=text] {
         width: 100%; /* Full width for smaller screens */
         margin: 0; /* Remove right margin */
         margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+    .calculation-container {
+        width: 90%; /* Set width to 90% of the container for smaller screens */
     }
 }
