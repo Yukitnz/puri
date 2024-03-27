@@ -102,4 +102,10 @@ tr:nth-child(even) {
     .calculation-container {
         width: 90%; /* Set width to 90% of the container for smaller screens */
     }
+    th,
+    td {
+        padding: 8px; /* Adjusted padding for smaller screens */
+        font-size: 12px; /* Adjusted font size for smaller screens */
+    }
 }
+
