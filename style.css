@@ -1,8 +1,7 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom, #213D30 0%, #AACCFF 30%);
-    /* Subtle gradient with primary and secondary colors */
+    background-color: #ffffff
     margin: 0;
     padding: 0;
     display: flex;
