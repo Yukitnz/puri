@@ -1,8 +1,149 @@
+/* Search container styles */
+.search-container {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Adjust width as needed */
+    background-color: #ffffff;
+    padding: 12px 20px;
+    z-index: 100; /* Ensure it appears above the tables */
+}
+
+.search-container input[type=text] {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%; /* Adjust width as needed */
+    max-width: 300px; /* Adjust max-width as needed */
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.search-container button {
+    padding: 12px 25px;
+    background-color: #228925;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Add box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Result button styles */
+.result-btn {
+    position: auto;
+    top: 0;
+    right: 0;
+    background-color: #228925;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Ensure it appears above the tables */
+}
+
+.result-btn:hover {
+    background-color: #45a049;
+}
+
+/* Calculation container styles */
+.calculation-container {
+    position: fixed;
+    top: 140px; /* Adjust as needed to avoid overlapping with the search container */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Adjust width as needed */
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 100; /* Ensure it appears above the tables */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.calculation-container label {
+    display: inline-block; /* Ensure the label and input are inline */
+    margin-right: 20px; /* Add space between label and input */
+}
+
+.calculation-container input[type=number] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20%; /* Set initial width */
+}
+
+.calculation-container button {
+    padding: 12px 25px;
+    background-color: #228925;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Add box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+}
+
+.calculation-container button:hover {
+    background-color: #45a049;
+}
+}
+/* Table container styles */
+.table-container {
+    top: auto;
+    margin-top: 250px; /* Adjust as needed to avoid overlapping with fixed containers */
+    overflow-x: auto;
+    max-width: 90%;
+}
+
+/* Table styles */
+/* Top row (thead) styles */
+table thead tr {
+    background-color: #97c3e7; /* Light gray background color */
+    
+   
+}
+table {
+    border-collapse: collapse;
+    margin-top: 200px; /* Add margin to the top of the table */
+    padding-top: 60px; /* Add padding to the top of the table */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 15px; /* Adjust as needed */
+    text-align: left;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    table {
+        margin-top: 160px; /* Adjust top margin for smaller screens */
+    }
+}
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom, #213D30 0%, #AACCFF 30%);
-    /* Subtle gradient with primary and secondary colors */
+    background-color: #0b4123; /* Replace 'your-color' with the desired color code */
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,102 +151,18 @@ body {
     align-items: center; /* Center the content vertically */
     min-height: 100vh; /* Ensure content fills the entire viewport height */
 }
-
-/* Container styles */
-.container {
-    max-width: 90%; /* Adjusted max-width for responsiveness */
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px; /* Increased border radius */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Table styles */
 table {
-    border-collapse: collapse;
+    background-color: #ffffff; /* Set the background color of the table to white */
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-
-th, td {
-    border: 1px solid #dddddd;
-    padding: 15px; /* Increased padding */
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-    cursor: pointer;
-    user-select: none; /* Prevent text selection while clicking on headers */
-    border-radius: 5px; /* Rounded corners for headers */
-}
-
-tr:nth-child(even) {
-    background-color: #f5f5f5; /* Light gray background for even rows */
-}
-
-/* Search container styles */
-.search-container {
-    text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #dddddd; /* Thin border for separation */
-    padding: 12px 20px;
-}
-
-.search-container input[type=text] {
-    padding: 12px 20px; /* Adjusted padding */
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Rounded corners for search bar */
-    width: 60%;
-    margin-right: 10px;
-}
-
-/* Result button styles */
-.result-btn {
-    background-color: #228925;
-    color: white;
-    padding: 12px 25px; /* Adjusted padding */
-    border: none;
-    border-radius: 5px; /* Rounded corners for button */
-    cursor: pointer;
-    transition: background-color 0.3s;
-    /* Add box shadow */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
-}
-
-.result-btn:hover {
-    background-color: #45a049;
-}
-
-
-
-/* Media queries for smaller screens */
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 90%; /* Adjusted max-width for smaller screens */
-    }
-    table {
-        font-size: 14px; /* Decreased font size for smaller screens */
-    }
-    th,
-    td {
-        padding: 10px; /* Decreased padding for smaller screens */
-    }
-    .search-container input[type=text] {
-        padding: 10px; /* Adjusted padding for smaller screens */
-    }
-    .result-btn {
-        padding: 10px 20px; /* Adjusted padding for smaller screens */
-    }
-}
-
-/* Calculation container styles */
-.calculation-container {
-    width: 90%; /* Set width to 90% of the container */
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center align the contents within the container */
-    margin: 20px auto; /* Center the calculation container horizontally */
+    background-color: #ffffff; /* Add your desired background color */
+    padding: 0.1% 0.1%; /* Add padding for spacing */
+    z-index: 1000; /* Ensure the header is above other elements */
+    font-size: 15px;
 }
