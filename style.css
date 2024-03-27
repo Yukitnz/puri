@@ -33,7 +33,7 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     cursor: pointer;
     user-select: none; /* Prevent text selection while clicking on headers */
     border-radius: 5px; /* Rounded corners for headers */
