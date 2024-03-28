@@ -104,7 +104,6 @@ tr:nth-child(even) {
     padding: 10px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center; /* Center align the contents within the container */
     margin: 20px auto; /* Center the calculation container horizontally */
 }
