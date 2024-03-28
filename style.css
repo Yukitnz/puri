@@ -101,7 +101,7 @@ tr:nth-child(even) {
 /* Calculation container styles */
 .calculation-container {
     width: 100%; /* Set width to 90% of the container */
-    padding: 20px;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
